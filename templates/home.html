@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Home page</title>
 </head>
 <body>
 	<h1>Home page</h1>
+	{%for ele in data%}
+		<h1>{{ele.First_name}}</h1>
+		<p>My name is {{ele.First_name}} {{ele.Second_name}} and my phone number is {{ele.Phone}}</p>
+	{%endfor%}
+
 </body>
 </html>
