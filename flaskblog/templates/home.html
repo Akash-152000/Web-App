@@ -1,0 +1,17 @@
+{%extends "layout.html"%}
+{%block content%}
+	<h1>Home page</h1>
+	{%for ele in data%}
+		<article class="media content-section">
+		  <div class="media-body">
+		    <div class="article-metadata">
+		      <a class="mr-2" href="#">{{ ele.First_name }}</a>
+		      
+		    </div>
+		    <h2><a class="article-title" href="#">{{ ele.Phone }}</a></h2>
+		    <p class="article-content">{{ ele.content }}</p>
+		  </div>
+		</article>
+	{%endfor%}
+{%endblock content %}
+
